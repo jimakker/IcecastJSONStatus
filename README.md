@@ -1,7 +1,7 @@
 IcecastJSONStatus
 =================
 
-A replacement for Icecasts' status.xsl offering a nice JSON output
+A replacement for Icecast's status.xsl offering a nice JSON output
 
 ![IcecastJSONStatus](http://baibalab.net/media/icecastJSONstats.png)
 
