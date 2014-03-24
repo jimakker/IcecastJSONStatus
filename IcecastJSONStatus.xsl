@@ -11,7 +11,7 @@
 <xsl:template match = "/icestats" >
     {
     "total_listeners":"<xsl:value-of select="listeners"/>",
-    "mounts" : [
+    "mounts" : {
 <xsl:for-each select="source">
 <xsl:choose>
 <xsl:when test="listeners">
@@ -64,6 +64,6 @@
     }
 <xsl:if test="position() != last()">,</xsl:if>
 </xsl:for-each>
-]}
+}}
 </xsl:template>
 </xsl:stylesheet>

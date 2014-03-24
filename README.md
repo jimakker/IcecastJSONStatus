@@ -3,7 +3,7 @@ IcecastJSONStatus
 
 A JSON status page for Icecast2
 
-![IcecastJSONStatus](http://baibalab.net/media/icecastJSONstats.png)
+![IcecastJSONStatus](http://baibalab.net/media/icecast_json_xsl.png)
 
 
 ### Install
