@@ -3,12 +3,15 @@
 
 <xsl:variable name="host" select="'YOUR_SERVER_URL_GOES_HERE(yes_with_two_kind_of_quotes)'"/>
 <xsl:variable name="port" select="YOUR_SERVER_PORT(usually_8000)"/>
+
 <!-- Example:
 <xsl:variable name="host" select="'http://myserver.com'"/>
 <xsl:variable name="port" select="8000"/> -->
 
 <xsl:template match = "/icestats" >
-{
+    {
+    "total_listeners":"<xsl:value-of select="listeners"/>",
+    "mounts" : [
 <xsl:for-each select="source">
 <xsl:choose>
 <xsl:when test="listeners">
@@ -61,6 +64,6 @@
     }
 <xsl:if test="position() != last()">,</xsl:if>
 </xsl:for-each>
-}
+]}
 </xsl:template>
 </xsl:stylesheet>
